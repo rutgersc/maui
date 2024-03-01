@@ -90,11 +90,11 @@
                 </SwipeView.LeftItems>
                 <SwipeView.Content>
                     <Grid
-                        BackgroundColor="LightGray">
+                        >
                         <Label
                             HorizontalOptions="Center"
                             VerticalOptions="Center"
-                            Text="Swipe Right (Reveal)"/>
+                            Text="Swipe Right (Reveal) NotAnimated"/>
                     </Grid>
                 </SwipeView.Content>
             </SwipeView>
@@ -120,10 +120,38 @@
                         <Label
                             HorizontalOptions="Center"
                             VerticalOptions="Center"
-                            Text="Swipe Left (Execute)"/>
+                            Text="Swipe Left (Execute) Animated"/>
                     </Grid>
                 </SwipeView.Content>
             </SwipeView>
+
+          <SwipeView
+            HeightRequest="60"
+            WidthRequest="300"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            Margin="12">
+            <SwipeView.RightItems>
+              <SwipeItems
+                Mode="Execute">
+                <SwipeItem
+                  Text="Delete"
+                  IconImageSource="coffee.png"
+                  BackgroundColor="Red"
+                  Invoked="OnInvoked"/>
+              </SwipeItems>
+            </SwipeView.RightItems>
+            <SwipeView.Content>
+              <Grid>
+                <Label
+                  HorizontalOptions="Center"
+                  VerticalOptions="Center"
+                  Text="Swipe Left (Execute) NotAnimated"/>
+              </Grid>
+            </SwipeView.Content>
+          </SwipeView>
+
+
             <SwipeView
                 HeightRequest="60"
                 WidthRequest="300"
